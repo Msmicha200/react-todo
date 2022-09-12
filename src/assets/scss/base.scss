@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: auto;
+}
+
+.container {
+    margin: auto;
+}
+
+@media (min-width: 640px) {
+    .container {
+        width: 600px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .container {
+        width: 1550px;
+    }
+}
+
+main {
+    /* padding: 10px 0; */
+    flex: 1;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Roboto';
+    font-size: 16px;
+}
+
+a,
+button,
+input,
+textarea {
+    background-color: unset;
+    font: inherit;
+    border: none;
+    outline: none;
+}
+
+input:invalid,
+textarea:invalid {
+    /* box-shadow: none; */
+}
+
+a::-moz-focus-inner,
+button::-moz-focus-inner,
+input::-moz-focus-inner,
+textarea::-moz-focus-inner,
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+    /* border: none; */
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+::-ms-clear,
+::-ms-reveal {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.fwn {
+    font-weight: normal;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.flex {
+    display: flex;
+}
+
+.inline-flex {
+    display: inline-flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.dir-col {
+    flex-direction: column;
+}
+
+.dir-col-rev {
+    flex-direction: column-reverse;
+}
+
+.dir-row-rev {
+    flex-direction: row-reverse;
+}
+
+.dir-row {
+    flex-direction: row;
+}
+
+.align-start {
+    justify-content: flex-start;
+}
+
+.align-end {
+    justify-content: flex-end;
+}
+
+.align-center {
+    justify-content: center;
+}
+
+.align-between {
+    justify-content: space-between;
+}
+
+.align-around {
+    justify-content: space-around;
+}
+
+.valign-start {
+    align-items: flex-start;
+}
+
+.valign-end {
+    align-items: flex-end;
+}
+
+.valign-center {
+    align-items: center;
+}
+
+.full-w {
+    width: 100%;
+}
+
+.half-w {
+    width: 50%;
+}
+
+.new-button-container {
+    margin: 40px;
+}
+
+%placeholder {
+    color: #c3c3c3;
+    pointer-events: none;
+    user-select: none;
+}

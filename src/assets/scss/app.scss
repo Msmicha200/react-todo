@@ -1,0 +1,38 @@
+.container {
+    min-height: 100vh;
+
+    .todos-table {
+        border-collapse: collapse;
+        $transition: .2s;
+
+        tbody {
+            tr {
+                transition: $transition;
+                cursor: pointer;
+                
+                td {
+                    padding: 5px 10px;
+                    border: 1px solid black;
+                    transition: $transition;
+    
+                    &:nth-child(2) {
+                        text-align: center;
+                    }
+                }
+    
+                // &:hover{
+                //     &:hover td {
+                //         color: #fff;
+                //     }
+    
+                //     background-color: rgba($color: blue, $alpha: .6);
+                // }
+
+                &.selected {
+                    transform: scale(1.05);
+                    background: rgba($color: blue, $alpha: .6);
+                }
+            }
+        }
+    }
+}

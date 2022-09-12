@@ -1,0 +1,17 @@
+{
+    "extends": [
+        "react-app",
+        "react-app/jest",
+        "plugin:react-hooks/recommended"
+    ],
+    "rules": {
+        "semi": "error",
+        "quotes": [ "error", "single" ],
+        "eol-last": [ "error", "always" ],
+        "default-case": "off",
+        "indent": [ "error", 4, { "SwitchCase": 1 } ],
+        "object-curly-spacing": [ "error", "always" ],
+        "array-bracket-spacing": [ "error", "never" ],
+        "react-hooks/exhaustive-deps": ["off"]
+    }
+}
